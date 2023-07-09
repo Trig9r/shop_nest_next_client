@@ -22,7 +22,7 @@ export const Breadcrumbs = ({
   getTextGenerator,
   getDefaultTextGenerator
 }: {
-  getTextGenerator: (arg0: string, query: ParsedUrlQuery) => void;
+  getTextGenerator: (arg0: string, query: ParsedUrlQuery) => () => string;
   getDefaultTextGenerator: (arg0: string, href: string) => string;
 }) => {
   const router = useRouter();
