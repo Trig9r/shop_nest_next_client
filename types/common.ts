@@ -36,7 +36,7 @@ export interface GeoLocationProps {
 
 export interface CrumbProps {
   text: string;
-  textGenerator: any;
+  textGenerator: () => any;
   href: string;
   last: boolean;
 }
